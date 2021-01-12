@@ -1,22 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <span className="material-icons App-logo">code
+        </span>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/chadwhyte"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
+          github.com/chadwhyte
+        </a>
+        <br />
+        <span className="material-icons App-logo">account_circle
+        </span>
+        <a
+          className="App-link"
+          href="https://www.linkedin.com/in/chad-whyte/"
+          target="_blank"
+        >
+          linkedin.com/in/chad-whyte
         </a>
       </header>
     </div>
