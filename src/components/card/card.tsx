@@ -4,14 +4,16 @@ import { ICard } from './card.interface';
 function Card(card : ICard) {
     return (
         <div className="card-container">
-            <h2>
-                {card.title}
-            </h2>
-            <div className="card-details">
+            <div className="card-title">
                 <span className="material-icons card-logo">
                     {card.icon}
                 </span>
-                <a className="card-link" href={card.link} target="_blank">
+                <h2>
+                    {card.title}
+                </h2>    
+            </div>
+            <div>
+                <a className="card-link" href={card.link} target="_blank" rel="noreferrer">
                     {card.text}
                 </a>
             </div>
