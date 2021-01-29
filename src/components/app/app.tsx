@@ -2,15 +2,19 @@ import React from 'react';
 import './app.css';
 import Card from '../card/card';
 import { Cards } from '../card/cards';
+import Bio from '../bio/bio';
 
 function App() {
   return (
     <div className="app">
-      <header className="app-header">
-        {Cards.map((card) => {
-          return <Card {...card} />
-        })}
-      </header>
+        <div className="app-summary">
+          <Bio />
+        </div>
+        <div className="app-content">
+          {Cards.map((card) => {
+            return <Card {...card} />
+          })}
+        </div>
     </div>
   );
 }
