@@ -12,7 +12,7 @@ function App() {
         </div>
         <div className="app-content">
           {Cards.map((card) => {
-            return <Card {...card} />
+            return <Card {...card} key={card.title}/>
           })}
         </div>
     </div>
